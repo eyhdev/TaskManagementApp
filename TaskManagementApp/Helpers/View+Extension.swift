@@ -2,17 +2,25 @@
 //  View+Extension.swift
 //  TaskManagementApp
 //
-//  Created by eyh.mac on 3.10.2023.
+//  Created by eyh.mac on 26.09.2023.
 //
 
 import SwiftUI
 
-struct View_Extension: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension View{
+    @ViewBuilder
+    func hSpacing(_ alignment: Alignment) -> some View {
+        self
+            .frame(maxWidth: .infinity, alignment: alignment)
     }
-}
-
-#Preview {
-    View_Extension()
+    @ViewBuilder
+    
+    func vSpacing(_ alignment: Alignment) -> some View {
+        self
+            .frame(maxHeight: .infinity, alignment: alignment)
+    }
+    
+    func isSameDate(_ date1: Date, _ date2: Date) -> Bool {
+        return Calendar.current.isDate(date1, inSameDayAs: date2)
+    }
 }

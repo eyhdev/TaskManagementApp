@@ -14,6 +14,13 @@
 		D4CB3C732ACC39AE00AAD45F /* TaskManagementAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C722ACC39AE00AAD45F /* TaskManagementAppTests.swift */; };
 		D4CB3C7D2ACC39AE00AAD45F /* TaskManagementAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C7C2ACC39AE00AAD45F /* TaskManagementAppUITests.swift */; };
 		D4CB3C7F2ACC39AE00AAD45F /* TaskManagementAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C7E2ACC39AE00AAD45F /* TaskManagementAppUITestsLaunchTests.swift */; };
+		D4CB3C8F2ACC39F000AAD45F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C8E2ACC39F000AAD45F /* Home.swift */; };
+		D4CB3C912ACC39F600AAD45F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C902ACC39F600AAD45F /* Task.swift */; };
+		D4CB3C932ACC3A0100AAD45F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C922ACC3A0100AAD45F /* View+Extension.swift */; };
+		D4CB3C962ACC3A0F00AAD45F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C952ACC3A0F00AAD45F /* Date+Extension.swift */; };
+		D4CB3C982ACC3A1900AAD45F /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C972ACC3A1900AAD45F /* OffsetKey.swift */; };
+		D4CB3C9A2ACC3A2D00AAD45F /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C992ACC3A2D00AAD45F /* NewTaskView.swift */; };
+		D4CB3C9C2ACC3A3600AAD45F /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB3C9B2ACC3A3600AAD45F /* TaskRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		D4CB3C782ACC39AE00AAD45F /* TaskManagementAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskManagementAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CB3C7C2ACC39AE00AAD45F /* TaskManagementAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagementAppUITests.swift; sourceTree = "<group>"; };
 		D4CB3C7E2ACC39AE00AAD45F /* TaskManagementAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagementAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4CB3C8E2ACC39F000AAD45F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D4CB3C902ACC39F600AAD45F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D4CB3C922ACC3A0100AAD45F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		D4CB3C952ACC3A0F00AAD45F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D4CB3C972ACC3A1900AAD45F /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
+		D4CB3C992ACC3A2D00AAD45F /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		D4CB3C9B2ACC3A3600AAD45F /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,9 @@
 		D4CB3C602ACC39AD00AAD45F /* TaskManagementApp */ = {
 			isa = PBXGroup;
 			children = (
+				D4CB3C8D2ACC39DE00AAD45F /* Model */,
+				D4CB3C8C2ACC39D900AAD45F /* Helpers */,
+				D4CB3C8B2ACC39D200AAD45F /* View */,
 				D4CB3C612ACC39AD00AAD45F /* TaskManagementAppApp.swift */,
 				D4CB3C632ACC39AD00AAD45F /* ContentView.swift */,
 				D4CB3C652ACC39AE00AAD45F /* Assets.xcassets */,
@@ -125,6 +142,34 @@
 				D4CB3C7E2ACC39AE00AAD45F /* TaskManagementAppUITestsLaunchTests.swift */,
 			);
 			path = TaskManagementAppUITests;
+			sourceTree = "<group>";
+		};
+		D4CB3C8B2ACC39D200AAD45F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4CB3C8E2ACC39F000AAD45F /* Home.swift */,
+				D4CB3C992ACC3A2D00AAD45F /* NewTaskView.swift */,
+				D4CB3C9B2ACC3A3600AAD45F /* TaskRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4CB3C8C2ACC39D900AAD45F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D4CB3C922ACC3A0100AAD45F /* View+Extension.swift */,
+				D4CB3C952ACC3A0F00AAD45F /* Date+Extension.swift */,
+				D4CB3C972ACC3A1900AAD45F /* OffsetKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D4CB3C8D2ACC39DE00AAD45F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4CB3C902ACC39F600AAD45F /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CB3C912ACC39F600AAD45F /* Task.swift in Sources */,
+				D4CB3C9C2ACC3A3600AAD45F /* TaskRowView.swift in Sources */,
 				D4CB3C642ACC39AD00AAD45F /* ContentView.swift in Sources */,
+				D4CB3C932ACC3A0100AAD45F /* View+Extension.swift in Sources */,
+				D4CB3C982ACC3A1900AAD45F /* OffsetKey.swift in Sources */,
+				D4CB3C9A2ACC3A2D00AAD45F /* NewTaskView.swift in Sources */,
+				D4CB3C8F2ACC39F000AAD45F /* Home.swift in Sources */,
 				D4CB3C622ACC39AD00AAD45F /* TaskManagementAppApp.swift in Sources */,
+				D4CB3C962ACC3A0F00AAD45F /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

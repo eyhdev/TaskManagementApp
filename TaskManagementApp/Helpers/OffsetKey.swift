@@ -7,12 +7,9 @@
 
 import SwiftUI
 
-struct OffsetKey: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct OffsetKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
     }
-}
-
-#Preview {
-    OffsetKey()
 }
